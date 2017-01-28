@@ -3,7 +3,7 @@ var {Link, IndexLink} = require('react-router');
 
 
 // functional stateless component
-var Nav = () => {
+var Navigation = () => {
   return (
     <div className="top-bar">
       <div className="top-bar-left">
@@ -13,7 +13,7 @@ var Nav = () => {
             <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
           </li>
           <li>
-            <Link to="/" activeClassName="active-link">Countdown</Link>
+            <Link to="/countdown" activeClassName="active-link">Countdown</Link>
           </li>
         </ul>
       </div>
@@ -28,4 +28,4 @@ var Nav = () => {
   )
 }
 
-module.exports = Nav;
+module.exports = Navigation;
